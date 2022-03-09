@@ -1,0 +1,13 @@
+require("dotenv")
+
+const express = require("express")
+
+const app = express()
+
+app.get('/', (req, res) => {
+    res.send('Hello Purna!')
+})
+
+app.listen(process.env.PORT || 3001, () => {
+  console.log("Server started purna!!");
+})
